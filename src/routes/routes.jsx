@@ -1,26 +1,76 @@
-// src/routes/routes.jsx
-import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import React, { Suspense, lazy } from "react";
+import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "../layout/AppLayout"; // Your main layout component
-import Home from "../pages/Home"; // Your Home page component
-import AboutUs from "../pages/AboutUs";
-import Blogs from "../pages/Blogs"; // Your Blogs page component
-import ContactUs from "../pages/ContactUs"; // Your ContactUs page component
-import IndvBlog from "../pages/IndvBlog"; // Ensure this file exists or adjust path
-import Services from "../pages/Services"; // Your Services page component
+
+// Lazy loading components
+const Home = lazy(() => import("../pages/Home")); // Home page component
+const AboutUs = lazy(() => import("../pages/AboutUs")); // About Us page component
+const Blogs = lazy(() => import("../pages/Blogs")); // Blogs page component
+const ContactUs = lazy(() => import("../pages/ContactUs")); // Contact Us page component
+const Services = lazy(() => import("../pages/Services")); // Services page component
+const IndvBlog = lazy(() => import("../pages/IndvBlog")); // Individual blog page component
+const ErrorPage = lazy(() => import("../components/ErrorPage/ErrorPage")); // Error page component
 
 const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />, // Layout component that wraps around pages
     children: [
-      { path: "/", element: <Home /> }, // Home page route
-      { path: "/about-us", element: <AboutUs /> }, // AboutUs page route
-      { path: "/blogs", element: <Blogs /> }, // Blogs page route
-      { path: "/contact-us", element: <ContactUs /> }, // ContactUs page route
-      { path: "/services", element: <Services /> }, // Services page route
-      // { path: "blogs/:blogName", element: <IndvBlog /> }, // Individual blog page route with dynamic parameter
+      {
+        path: "/",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <Home />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/about-us",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <AboutUs />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/blogs",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <Blogs />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/contact-us",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <ContactUs />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/services",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <Services />
+          </Suspense>
+        ),
+      },
+      //The following route if you want to add dynamic routing for individual blogs
+      {
+        path: "blogs/:id",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <IndvBlog />
+          </Suspense>
+        ),
+      },
     ],
+    errorElement: (
+      <Suspense fallback={<p>Loading...</p>}>
+        <ErrorPage />
+      </Suspense>
+    ),
   },
 ]);
 
