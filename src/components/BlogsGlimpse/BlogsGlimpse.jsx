@@ -5,7 +5,7 @@ const BlogsGlimpse = () => {
     <>
       <div className="2xl:container mx-auto">
         <div className="w-[90%] mx-auto ">
-          <div></div>
+          <div>Blogs Glimpse</div>
         </div>
       </div>
     </>
