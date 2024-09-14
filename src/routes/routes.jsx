@@ -6,7 +6,7 @@ import Home from "../pages/Home"; // Your Home page component
 import AboutUs from "../pages/AboutUs";
 import Blogs from "../pages/Blogs"; // Your Blogs page component
 import ContactUs from "../pages/ContactUs"; // Your ContactUs page component
-import IndvBlog from "../pages/IndvBlog"; // Ensure this file exists or adjust path
+//import IndvBlog from "../pages/IndvBlog"; // Ensure this file exists or adjust path
 import Services from "../pages/Services"; // Your Services page component
 
 const appRouter = createBrowserRouter([
