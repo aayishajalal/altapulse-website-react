@@ -1,23 +1,33 @@
 import React, { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import AppLayout from "../layout/AppLayout"; // Your main layout component
+import AppLayout from "../layout/AppLayout";
+import { Outlet } from "react-router-dom"; // Required for nested routes
 
 // Lazy loading components
-const Home = lazy(() => import("../pages/Home")); // Home page component
-const AboutUs = lazy(() => import("../pages/AboutUs")); // About Us page component
-const Blogs = lazy(() => import("../pages/Blogs")); // Blogs page component
-const ContactUs = lazy(() => import("../pages/ContactUs")); // Contact Us page component
-const Services = lazy(() => import("../pages/Services")); // Services page component
-const IndvBlog = lazy(() => import("../pages/IndvBlog")); // Individual blog page component
-const ErrorPage = lazy(() => import("../components/ErrorPage/ErrorPage")); // Error page component
+const Home = lazy(() => import("../pages/Home"));
+const AboutUs = lazy(() => import("../pages/AboutUs"));
+const Blogs = lazy(() => import("../pages/Blogs"));
+const ContactUs = lazy(() => import("../pages/ContactUs"));
+const Services = lazy(() => import("../pages/Services"));
+// const IndvBlog = lazy(() => import("../pages/IndvBlog"));
+const ErrorPage = lazy(() => import("../components/ErrorPage/ErrorPage"));
 
 const appRouter = createBrowserRouter([
   {
-    path: "/",
-    element: <AppLayout />, // Layout component that wraps around pages
+    path: "/", // Base route
+    element: (
+      <Suspense fallback={<p>Loading...</p>}>
+        <AppLayout />
+      </Suspense>
+    ),
+    errorElement: (
+      <Suspense fallback={<p>Loading...</p>}>
+        <ErrorPage />
+      </Suspense>
+    ),
     children: [
       {
-        path: "/",
+        path: "/", // Home page route
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <Home />
@@ -25,7 +35,7 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: "/about-us",
+        path: "/about-us", // About Us page route
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <AboutUs />
@@ -33,15 +43,23 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: "/blogs",
+        path: "/blogs", // Blogs page route
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <Blogs />
           </Suspense>
         ),
       },
+      // {
+      //   path: "/blogs/:id", // Dynamic individual blog route
+      //   element: (
+      //     <Suspense fallback={<p>Loading...</p>}>
+      //       <IndvBlog />
+      //     </Suspense>
+      //   ),
+      // },
       {
-        path: "/contact-us",
+        path: "/contact-us", // Contact Us page route
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <ContactUs />
@@ -49,28 +67,14 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: "/services",
+        path: "/services", // Services page route
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <Services />
           </Suspense>
         ),
       },
-      //The following route if you want to add dynamic routing for individual blogs
-      {
-        path: "blogs/:id",
-        element: (
-          <Suspense fallback={<p>Loading...</p>}>
-            <IndvBlog />
-          </Suspense>
-        ),
-      },
     ],
-    errorElement: (
-      <Suspense fallback={<p>Loading...</p>}>
-        <ErrorPage />
-      </Suspense>
-    ),
   },
 ]);
 
