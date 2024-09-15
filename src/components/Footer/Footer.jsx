@@ -30,10 +30,22 @@ const Footer = () => {
                 <span>+1 234 456 678 89</span>
               </div>
               <div className="flex gap-3 mt-2">
-                <SocialIcon network="linkedin" style={{ height: 30, width: 30 }} />
-                <SocialIcon network="instagram" style={{ height: 30, width: 30 }} />
-                <SocialIcon network="spotify" style={{ height: 30, width: 30 }} />
-                <SocialIcon network="facebook" style={{ height: 30, width: 30 }} />
+                <SocialIcon
+                  network="linkedin"
+                  style={{ height: 30, width: 30 }}
+                />
+                <SocialIcon
+                  network="instagram"
+                  style={{ height: 30, width: 30 }}
+                />
+                <SocialIcon
+                  network="spotify"
+                  style={{ height: 30, width: 30 }}
+                />
+                <SocialIcon
+                  network="facebook"
+                  style={{ height: 30, width: 30 }}
+                />
                 <SocialIcon network="x" style={{ height: 30, width: 30 }} />
               </div>
             </div>
@@ -72,16 +84,23 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Section */}
-          <div className="flex flex-col items-center space-y-4">
-            <h1 className="text-lg font-semibold">Newsletter</h1>
-            <p className="text-sm">Stay up to date</p>
-            <div className="flex w-full md:w-auto border border-primary rounded-lg overflow-hidden">
+          <div className="flex flex-col items-center md:items-start px-4 md:px-0">
+            {/* Heading */}
+            <h1 className="text-2xl font-medium tracking-widest pb-4 text-center md:text-left">
+              Newsletter
+            </h1>
+            <p className="text-center md:text-left">Stay up to date</p>
+
+            {/* Input and Button Container */}
+            <div className="flex flex-col md:flex-row gap-4 items-center border border-primary rounded-xl px-4 py-2 mt-2 w-full max-w-md">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="outline-none flex-grow px-3 py-2 text-sm"
+                className="outline-none py-2 px-3 w-full md:flex-grow text-sm"
               />
-              <FillButton name="Subscribe" />
+              <div className="w-full md:w-auto mt-2 md:mt-0">
+                <FillButton name="Subscribe" />
+              </div>
             </div>
           </div>
         </div>
