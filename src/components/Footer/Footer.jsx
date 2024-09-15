@@ -1,126 +1,96 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { SocialIcon } from "react-social-icons";
+import { MdEmail } from "react-icons/md";
+import { BsTelephoneFill } from "react-icons/bs";
+import { FillButton } from "../Button/Button";
 
-const Footer = ({ refs }) => {
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const scrollToSection = (ref) => {
-    const offset = -80; // Adjust this value
-    const position =
-      ref.current?.getBoundingClientRect().top + window.scrollY + offset;
-
-    window.scrollTo({
-      top: position,
-      behavior: "smooth",
-    });
-
-    setShow(false);
-  };
-
+const Footer = () => {
   return (
-    <div className="2xl:container mx-auto py-4">
-      <div className="w-[90%] mx-auto grid grid-cols-1 items-center gap-4 px-6 py-4">
-        {/* Logo and links */}
-        <div className="flex justify-between">
-          {/* Logo Section */}
-          <div className="justify-self-start">
-            <img
-              src="https://ik.imagekit.io/yuq4cit8f/public/logo-removebg-preview%20(1).png?updatedAt=1722677559303"
-              alt="Logo"
-              className="h-12"
-            />
+    <div className="bg-gray-100 py-12">
+      <div className="2xl:container mx-auto">
+        {/* Footer grid layout */}
+        <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 px-4 py-6">
+          {/* Logo & Contact Info */}
+          <div className="flex flex-col space-y-4">
+            <div className="flex items-center text-lg font-semibold space-x-2">
+              <img
+                src="https://ik.imagekit.io/yuq4cit8f/Logo%20(1).svg?updatedAt=1724916762752"
+                alt="Logo"
+                className="h-8 cursor-pointer"
+              />
+              <span>Altapulse</span>
+            </div>
+            <div className="space-y-4 text-sm">
+              <div className="flex items-center gap-2">
+                <MdEmail className="h-6 w-6" />
+                <span>help@frybix.com</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <BsTelephoneFill className="h-5 w-5" />
+                <span>+1 234 456 678 89</span>
+              </div>
+              <div className="flex gap-3 mt-2">
+                <SocialIcon network="linkedin" style={{ height: 30, width: 30 }} />
+                <SocialIcon network="instagram" style={{ height: 30, width: 30 }} />
+                <SocialIcon network="spotify" style={{ height: 30, width: 30 }} />
+                <SocialIcon network="facebook" style={{ height: 30, width: 30 }} />
+                <SocialIcon network="x" style={{ height: 30, width: 30 }} />
+              </div>
+            </div>
           </div>
 
-          {/* Navigation Links Section */}
-          <div className="justify-self-end pt-3">
-            <ul className="flex gap-4 md:flex-row md:gap-6 pr-4">
-              <li id="home">
-                <button
-                  onClick={() => scrollToSection(refs.homeRef)}
-                  className="relative text-xs md:text-sm transition duration-300 ease-in-out transform text-gray-700 hover:text-primary"
-                >
-                  Home
-                </button>
-              </li>
-              <li id="services">
-                <button
-                  onClick={() => scrollToSection(refs.servicesRef)}
-                  className="relative text-xs md:text-sm transition duration-300 ease-in-out transform text-gray-700 hover:text-primary"
-                >
-                  Services
-                </button>
-              </li>
-              <li id="about">
-                <button
-                  onClick={() => scrollToSection(refs.aboutRef)}
-                  className="relative text-xs md:text-sm transition duration-300 ease-in-out transform text-gray-700 hover:text-primary"
-                >
-                  About
-                </button>
-              </li>
-              <li id="testimonials">
-                <button
-                  onClick={() => scrollToSection(refs.testimonialsRef)}
-                  className="relative text-xs md:text-sm transition duration-300 ease-in-out transform text-gray-700 hover:text-primary"
-                >
-                  Testimonials
-                </button>
-              </li>
-            </ul>
+          {/* Links Section */}
+          <div className="flex flex-col items-center space-y-4">
+            <h1 className="text-lg font-semibold">Links</h1>
+            <div className="space-y-2 text-sm">
+              <p>Home</p>
+              <p>About Us</p>
+              <p>Services</p>
+              <p>Blogs</p>
+            </div>
+          </div>
+
+          {/* Legal Section */}
+          <div className="flex flex-col items-center space-y-4">
+            <h1 className="text-lg font-semibold">Legal</h1>
+            <div className="space-y-2 text-sm">
+              <p>Terms Of Use</p>
+              <p>Privacy Policy</p>
+              <p>Cookie Policy</p>
+            </div>
+          </div>
+
+          {/* Services Section */}
+          <div className="flex flex-col items-center space-y-4">
+            <h1 className="text-lg font-semibold">Services</h1>
+            <div className="space-y-2 text-sm">
+              <p>Digital Marketing</p>
+              <p>Automation</p>
+              <p>Design</p>
+              <p>Podcasts</p>
+            </div>
+          </div>
+
+          {/* Newsletter Section */}
+          <div className="flex flex-col items-center space-y-4">
+            <h1 className="text-lg font-semibold">Newsletter</h1>
+            <p className="text-sm">Stay up to date</p>
+            <div className="flex w-full md:w-auto border border-primary rounded-lg overflow-hidden">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="outline-none flex-grow px-3 py-2 text-sm"
+              />
+              <FillButton name="Subscribe" />
+            </div>
           </div>
         </div>
-        <hr className="border-1 border-bodytext" />
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 ">
-          <div className="text-xs md:text-sm lg:text-sm text-gray-600 text-center md:text-left w-3/4 ">
-            <p>
-              All rights reserved ® drulagaratchagan.in | Terms and conditions
-              apply!
-            </p>
-          </div>
 
-          <div className="text-xs md:text-sm lg:text-sm text-gray-600 text-center md:text-left">
-            <span className="font-medium">Clinic Address: &nbsp;</span>
-            Dr. Ulag's Clinic, No:28/A, Velvan Nagar, Balaji Nagar main road,
-            Kolathur, Chennai -600099
+        {/* Copyright Section */}
+        <div className="w-full border-t mt-8">
+          <div className="text-center py-4">
+            <p className="text-sm">© 2024 Altapulse. All rights reserved.</p>
           </div>
-          {/* Social Links Section */}
-          {/* <div className="justify-self-end">
-            <ul className="flex flex-row gap-5 pt-4 md:gap-6 pr-4 md:pt-0">
-              <li id="linkedin">
-                <SocialIcon
-                  url="https://linkedin.com/in/couetilc"
-                  style={{ height: 25, width: 25 }}
-                />
-              </li>
-              <li id="social-icon">
-                <SocialIcon
-                  url="https://react-social-icons.com"
-                  style={{ height: 25, width: 25 }}
-                />
-              </li>
-              <li id="example">
-                <SocialIcon
-                  url="https://www.example.com"
-                  style={{ height: 25, width: 25 }}
-                />
-              </li>
-            </ul>
-          </div> */}
         </div>
       </div>
     </div>
