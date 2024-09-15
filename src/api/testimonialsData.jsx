@@ -1,66 +1,65 @@
 export const testimonialsData = [
   {
     id: 1,
-    name: "Arjun Kumar",
-    rating: 5,
+    name: "Rohit Sharma",
+    title: "Fantastic website redesign and marketing strategy",
     description:
-      "I was having severe headaches for a long time, making my day-to-day life very difficult. After consulting Dr. Ulagaratchagan, I got proper treatment, and now I feel much better. He really knows how to address the root cause, and it has improved my life greatly.",
+      "The agency completely transformed our website and implemented a robust digital marketing strategy. We saw a significant increase in both traffic and conversions. Highly recommend them!",
   },
   {
     id: 2,
-    name: "Vijay Milton",
-    rating: 5,
+    name: "Priya Menon",
+    title: "Professional website development and SEO services",
     description:
-      "My child was suffering from Autism, which affected his studies a lot. With Dr. Ulagaratchagan's treatment, he is handling daily activities much better. His studies and social interactions have improved a lot. Thanks to his expert care and attention. I am very thankful for his help.",
+      "They built us a sleek, responsive website and optimized it for search engines. Within months, our traffic soared, and we are now getting more leads than ever.",
   },
   {
     id: 3,
-    name: "Khaleel Rahman",
-    rating: 4.5,
+    name: "Ananya Rao",
+    title: "Incredible video editing for promotional content",
     description:
-      "Parkinson's disease was making my father's life very difficult, affecting his movement and daily tasks. Thanks to Dr. Ulagaratchagan's treatment, my dad is managing much better now. Dr. Ulagaratchagan's approach was very effective, and my dad feels more confident in handling his symptoms.",
+      "Their video editing team created high-quality promotional videos for our business. The videos were engaging, well-edited, and have helped us capture the attention of our audience.",
   },
   {
     id: 4,
-    name: "Kuppuswamy",
-    rating: 4.5,
+    name: "Karan Mehta",
+    title: "Seamless website with top-notch marketing support",
     description:
-      "After my stroke attack, I consulted Dr. Ulagaratchagan. Under his care, I have seen remarkable improvements in my recovery within a short time. Functionally, my limbs became normal in a short time. I am thankful for his expertise.",
+      "They designed a flawless e-commerce website for us and provided excellent marketing services. Their social media and email campaigns have driven our sales up significantly.",
   },
   {
     id: 5,
-    name: "Samuel Raj",
-    rating: 4,
+    name: "Ravi Kumar",
+    title: "Creative video editing and effective branding",
     description:
-      "I had chronic sleep issues for 8months. But with Dr. Ulagaratchagan's treatment and some lifestyle changes he suggested, I am now sleeping much better. His advice was spot on, and I feel more rested now. Truly, his guidance made a big difference.",
+      "Their video editing team produced content that aligned perfectly with our brand image. The marketing campaigns that followed had a measurable impact on our engagement and conversions.",
   },
   {
     id: 6,
-    name: "Priyadharshini",
-    rating: 5,
+    name: "Neha Reddy",
+    title: "Effective website development and PPC campaigns",
     description:
-      "Living with epilepsy was a real struggle for me. After meeting Dr. Ulagaratchagan, the medications and advice have helped me stop getting seizures. My overall well-being has improved, and I am very grateful for his dedicated care.",
+      "They developed a highly functional website for us and launched successful PPC campaigns. Our lead generation has improved drastically, and our site is performing exceptionally well.",
   },
   {
     id: 7,
-    name: "Raviprasad",
-    rating: 4.5,
+    name: "David Hughes",
+    title: "Top-notch website design with strategic marketing",
     description:
-      "My mother was facing memory issues, which was quite challenging. Dr. Ulagaratchagan's treatment and support helped my mother improve significantly. Now, her memory has improved.",
+      "The agency delivered a stunning website that not only looks great but also converts well. Their strategic marketing approach brought us more traffic and higher sales.",
   },
   {
     id: 8,
-    name: "Neha Reddy",
-    rating: 4.5,
+    name: "Vikram Singh",
+    title: "Outstanding video editing and digital marketing support",
     description:
-      "I had severe neck pain and back pain. After meeting Dr. Ulagaratchagan, I have made good progress. The therapy sessions he recommended were very effective, and now I am leading a normal life. He is truly skilled in his field.",
+      "The video content they produced for our marketing campaigns was top-notch. Coupled with their digital marketing strategies, it gave us an edge in reaching new customers.",
   },
-
   {
     id: 9,
-    name: "Anbuselvan",
-    rating: 4.5,
+    name: "Sanjana Pillai",
+    title: "Impressive website design and video content creation",
     description:
-      "Neuropathy was causing me a lot of discomfort, and it was very chronic. After consulting with Dr. Ulagaratchagan, the treatment options he provided have helped manage the pain well. Now, I feel comfortable.",
+      "Their website design and video content creation services helped elevate our brand’s online presence. We’ve seen a big improvement in customer engagement and overall brand visibility.",
   },
 ];
