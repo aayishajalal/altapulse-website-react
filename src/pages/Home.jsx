@@ -27,7 +27,6 @@ const Home = () => {
       <Testimonials />
       <BlogsGlimpse />
       <Banner />
-      <SideBar />
     </>
   );
 };
