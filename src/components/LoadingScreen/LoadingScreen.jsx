@@ -1,9 +1,6 @@
 import React from "react";
 import { ScaleLoader } from "react-spinners";
 
-//https://uiverse.io/
-//react-spinners
-
 const LoadingScreen = ({ loading }) => {
   return (
     <>
