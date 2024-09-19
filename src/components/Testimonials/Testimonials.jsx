@@ -26,22 +26,22 @@ const Testimonials = () => {
           {/* Grid layout for Image and Carousel */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 items-center">
             {/* Image */}
-            <div className="order-2 lg:order-1">
+            <div className="order-2 lg:order-1 md:pl-24 flex items-center justify-center">
               <img
                 src="https://ik.imagekit.io/yuq4cit8f/testimonial?updatedAt=1726389462276"
                 alt="Testimonial"
-                className="h-56 md:h-[32rem] lg:h-[34rem] object-cover w-full"
+                className="h-72 md:h-[32rem] lg:h-[34rem] "
               />
             </div>
 
             {/* Carousel */}
-            <div className="order-1 lg:order-2">
+            <div className="order-2 md:order-1">
               <Swiper
                 modules={[Autoplay, Pagination]}
                 slidesPerView={1}
                 spaceBetween={30}
                 loop={true}
-                autoplay={{ delay: 8000 }}
+                autoplay={{ delay: 5000 }}
                 className="swiper-container w-full"
               >
                 {testimonialsData.map((review) => (

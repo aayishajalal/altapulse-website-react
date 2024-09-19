@@ -35,7 +35,7 @@ const HeroSection = () => {
             {/* Logo */}
             <div className="flex items-center justify-center">
               <img
-                className="h-56 md:h-[32rem] lg:h-[34rem]"
+                className="hidden h-72 md:block md:h-[32rem] lg:h-[34rem]"
                 src="https://ik.imagekit.io/yuq4cit8f/HomeHero.svg?updatedAt=1724916754422"
                 alt="home-hero-image"
               />

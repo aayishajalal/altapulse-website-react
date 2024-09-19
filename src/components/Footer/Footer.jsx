@@ -1,17 +1,18 @@
-import React from "react";
-import { SocialIcon } from "react-social-icons";
-import { MdEmail } from "react-icons/md";
-import { BsTelephoneFill } from "react-icons/bs";
-import { FillButton } from "../Button/Button";
+import React from 'react';
+import { SocialIcon } from 'react-social-icons';
+import { MdEmail } from 'react-icons/md';
+import { BsTelephoneFill } from 'react-icons/bs';
+import { FillButton } from '../Button/Button';
 
 const Footer = () => {
   return (
     <div className="bg-gray-100 py-12">
       <div className="2xl:container mx-auto">
         {/* Footer grid layout */}
-        <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 px-4 py-6">
+        <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 px-4 py-6">
+          
           {/* Logo & Contact Info */}
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col items-center md:items-start space-y-4">
             <div className="flex items-center text-lg font-semibold space-x-2">
               <img
                 src="https://ik.imagekit.io/yuq4cit8f/Logo%20(1).svg?updatedAt=1724916762752"
@@ -20,41 +21,29 @@ const Footer = () => {
               />
               <span>Altapulse</span>
             </div>
-            <div className="space-y-4 text-sm">
-              <div className="flex items-center gap-2">
+            <div className="space-y-4 text-sm text-center md:text-left">
+              <div className="flex items-center justify-center md:justify-start gap-2">
                 <MdEmail className="h-6 w-6" />
                 <span>help@frybix.com</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center md:justify-start gap-2">
                 <BsTelephoneFill className="h-5 w-5" />
                 <span>+1 234 456 678 89</span>
               </div>
-              <div className="flex gap-3 mt-2">
-                <SocialIcon
-                  network="linkedin"
-                  style={{ height: 30, width: 30 }}
-                />
-                <SocialIcon
-                  network="instagram"
-                  style={{ height: 30, width: 30 }}
-                />
-                <SocialIcon
-                  network="spotify"
-                  style={{ height: 30, width: 30 }}
-                />
-                <SocialIcon
-                  network="facebook"
-                  style={{ height: 30, width: 30 }}
-                />
+              <div className="flex gap-3 mt-2 justify-center md:justify-start">
+                <SocialIcon network="linkedin" style={{ height: 30, width: 30 }} />
+                <SocialIcon network="instagram" style={{ height: 30, width: 30 }} />
+                <SocialIcon network="spotify" style={{ height: 30, width: 30 }} />
+                <SocialIcon network="facebook" style={{ height: 30, width: 30 }} />
                 <SocialIcon network="x" style={{ height: 30, width: 30 }} />
               </div>
             </div>
           </div>
 
           {/* Links Section */}
-          <div className="flex flex-col items-center space-y-4">
-            <h1 className="text-lg font-semibold">Links</h1>
-            <div className="space-y-2 text-sm">
+          <div className="flex flex-col items-center md:items-start space-y-4">
+            <h1 className="text-lg font-semibold text-center md:text-left">Links</h1>
+            <div className="space-y-2 text-sm text-center md:text-left">
               <p>Home</p>
               <p>About Us</p>
               <p>Services</p>
@@ -63,9 +52,9 @@ const Footer = () => {
           </div>
 
           {/* Legal Section */}
-          <div className="flex flex-col items-center space-y-4">
-            <h1 className="text-lg font-semibold">Legal</h1>
-            <div className="space-y-2 text-sm">
+          <div className="flex flex-col items-center md:items-start space-y-4">
+            <h1 className="text-lg font-semibold text-center md:text-left">Legal</h1>
+            <div className="space-y-2 text-sm text-center md:text-left">
               <p>Terms Of Use</p>
               <p>Privacy Policy</p>
               <p>Cookie Policy</p>
@@ -73,9 +62,9 @@ const Footer = () => {
           </div>
 
           {/* Services Section */}
-          <div className="flex flex-col items-center space-y-4">
-            <h1 className="text-lg font-semibold">Services</h1>
-            <div className="space-y-2 text-sm">
+          <div className="flex flex-col items-center md:items-start space-y-4">
+            <h1 className="text-lg font-semibold text-center md:text-left">Services</h1>
+            <div className="space-y-2 text-sm text-center md:text-left">
               <p>Digital Marketing</p>
               <p>Automation</p>
               <p>Design</p>
