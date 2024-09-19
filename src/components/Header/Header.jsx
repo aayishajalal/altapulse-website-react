@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { IoCloseSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FillButton } from "../Button/Button";
@@ -31,8 +31,8 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    // Determine the active link based on the URL or other logic
-    const currentPath = location.hash.replace("#", "") || "home";
+    // Update the active link based on the current path
+    const currentPath = location.pathname.split("/")[1] || "home"; // Get the first part of the path
     setActiveLink(currentPath);
   }, [location]);
 
@@ -75,19 +75,21 @@ const Header = () => {
         >
           <ul className="flex flex-col md:flex-row py-10 md:py-0 md:items-center gap-5 md:gap-3 lg:gap-5 text-base font-medium md:text-sm lg:text-base">
             <li id="home" className="text-center md:text-left">
-              <button
+              <Link
+                to="/"
                 onClick={() => setActiveLink("home")}
                 className={`relative transition duration-300 ease-in-out transform py-1 md:py-0 ${
-                  activeLink === "home"
+                  activeLink === "" || activeLink === "home"
                     ? "text-secondary"
                     : "text-black hover:text-secondary"
                 }`}
               >
                 Home
-              </button>
+              </Link>
             </li>
             <li id="services" className="text-center md:text-left">
-              <button
+              <Link
+                to="/services"
                 onClick={() => setActiveLink("services")}
                 className={`relative transition duration-300 ease-in-out transform py-1 md:py-0 ${
                   activeLink === "services"
@@ -96,36 +98,38 @@ const Header = () => {
                 }`}
               >
                 Services
-              </button>
+              </Link>
             </li>
             <li id="about" className="text-center md:text-left">
-              <button
-                onClick={() => setActiveLink("about")}
+              <Link
+                to="/about-us"
+                onClick={() => setActiveLink("about-us")}
                 className={`relative transition duration-300 ease-in-out transform py-1 md:py-0 ${
-                  activeLink === "about"
+                  activeLink === "about-us"
                     ? "text-secondary"
                     : "text-black hover:text-secondary"
                 }`}
               >
                 About Us
-              </button>
+              </Link>
             </li>
-            <li id="testimonials" className="text-center md:text-left">
-              <button
-                onClick={() => setActiveLink("testimonials")}
+            <li id="blogs" className="text-center md:text-left">
+              <Link
+                to="/blogs"
+                onClick={() => setActiveLink("blogs")}
                 className={`relative transition duration-300 ease-in-out transform py-1 md:py-0 ${
-                  activeLink === "testimonials"
+                  activeLink === "blogs"
                     ? "text-secondary"
                     : "text-black hover:text-secondary"
                 }`}
               >
                 Blogs
-              </button>
+              </Link>
             </li>
             <li id="contact" className="text-center md:text-left">
-              <button className="">
+              <Link to="/contact-us">
                 <FillButton name="Contact" />
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

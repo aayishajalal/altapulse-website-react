@@ -1,8 +1,9 @@
-import React from 'react';
-import { SocialIcon } from 'react-social-icons';
-import { MdEmail } from 'react-icons/md';
-import { BsTelephoneFill } from 'react-icons/bs';
-import { FillButton } from '../Button/Button';
+import React from "react";
+import { SocialIcon } from "react-social-icons";
+import { MdEmail } from "react-icons/md";
+import { BsTelephoneFill } from "react-icons/bs";
+import { FillButton } from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,7 +11,6 @@ const Footer = () => {
       <div className="2xl:container mx-auto">
         {/* Footer grid layout */}
         <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 px-4 py-6">
-          
           {/* Logo & Contact Info */}
           <div className="flex flex-col items-center md:items-start space-y-4">
             <div className="flex items-center text-lg font-semibold space-x-2">
@@ -31,10 +31,22 @@ const Footer = () => {
                 <span>+1 234 456 678 89</span>
               </div>
               <div className="flex gap-3 mt-2 justify-center md:justify-start">
-                <SocialIcon network="linkedin" style={{ height: 30, width: 30 }} />
-                <SocialIcon network="instagram" style={{ height: 30, width: 30 }} />
-                <SocialIcon network="spotify" style={{ height: 30, width: 30 }} />
-                <SocialIcon network="facebook" style={{ height: 30, width: 30 }} />
+                <SocialIcon
+                  network="linkedin"
+                  style={{ height: 30, width: 30 }}
+                />
+                <SocialIcon
+                  network="instagram"
+                  style={{ height: 30, width: 30 }}
+                />
+                <SocialIcon
+                  network="spotify"
+                  style={{ height: 30, width: 30 }}
+                />
+                <SocialIcon
+                  network="facebook"
+                  style={{ height: 30, width: 30 }}
+                />
                 <SocialIcon network="x" style={{ height: 30, width: 30 }} />
               </div>
             </div>
@@ -42,28 +54,34 @@ const Footer = () => {
 
           {/* Links Section */}
           <div className="flex flex-col items-center md:items-start space-y-4">
-            <h1 className="text-lg font-semibold text-center md:text-left">Links</h1>
-            <div className="space-y-2 text-sm text-center md:text-left">
-              <p>Home</p>
-              <p>About Us</p>
-              <p>Services</p>
-              <p>Blogs</p>
+            <h1 className="text-lg font-semibold text-center md:text-left">
+              Links
+            </h1>
+            <div className="flex flex-col space-y-2 text-sm text-center md:text-left">
+              <Link to="/">Home</Link>
+              <Link to="/about-us">About Us</Link>
+              <Link to="/services">Services</Link>
+              <Link to="/blogs">Blogs</Link>
             </div>
           </div>
 
           {/* Legal Section */}
           <div className="flex flex-col items-center md:items-start space-y-4">
-            <h1 className="text-lg font-semibold text-center md:text-left">Legal</h1>
-            <div className="space-y-2 text-sm text-center md:text-left">
-              <p>Terms Of Use</p>
-              <p>Privacy Policy</p>
-              <p>Cookie Policy</p>
+            <h1 className="text-lg font-semibold text-center md:text-left">
+              Legal
+            </h1>
+            <div className=" flex flex-col space-y-2 text-sm text-center md:text-left">
+              <Link to="/terms">Terms Of Use</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
+              <Link to="/cookie-policy">Cookie Policy</Link>
             </div>
           </div>
 
           {/* Services Section */}
           <div className="flex flex-col items-center md:items-start space-y-4">
-            <h1 className="text-lg font-semibold text-center md:text-left">Services</h1>
+            <h1 className="text-lg font-semibold text-center md:text-left">
+              Services
+            </h1>
             <div className="space-y-2 text-sm text-center md:text-left">
               <p>Digital Marketing</p>
               <p>Automation</p>
