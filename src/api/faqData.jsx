@@ -1,22 +1,23 @@
 export const faqData = [
   {
-    question: "What are your opening hours?",
+    question: "What services does Altapulse provide?",
     answer:
-      "Our clinic is open Monday to Saturday from 10:00 AM to 12:30 PM in the morning and 6:30 PM to 9:00 PM in the evening. On Sundays, we're open from 10:00 AM to 12:30 PM.",
+      " Altapulse offers a wide range of digital services, including branding, digital marketing, content creation, social media management, and API integrations (WhatsApp, Google Ads, etc.) for startups and individuals",
   },
   {
-    question: "Do I need an appointment?",
+    question: " How does Altapulse help build brands?",
     answer:
-      "An appointment is not required in most cases. However, please check with our office for any specific requirements or conditions.",
+      " We provide end-to-end branding solutions, from creating a digital strategy to executing campaigns across multiple platforms, ensuring that every brand achieves maximum exposure and engagement.",
   },
   {
-    question: "Where is the clinic located?",
+    question: " Can Altapulse integrate third-party tools into our campaigns?",
     answer:
-      "No:28/A, Velvan Nagar, Balaji Nagar main road, Kolathur, Chennai -600099. Landmark: JK Party Hall and The Red Chilly Restuarant.  For more details, Contact: 80560 66446",
+      " Yes, Altapulse specializes in connecting and integrating APIs from major platforms like Google, Meta, and WhatsApp, ensuring seamless execution of digital campaigns across different channels",
   },
   {
-    question: "How can I pay for my appointment?",
+    question:
+      " What makes Altapulse different from other digital marketing agencies? ",
     answer:
-      "We accept payment in both cash and online mode. Pharmacy is attached to the clinic for the medicines prescribed.",
+      "Altapulse emphasizes a customized approach to every client. We combine innovation, data-driven strategies, and the integration of advanced tools to ensure that our clients achieve their branding and marketing goals",
   },
 ];
