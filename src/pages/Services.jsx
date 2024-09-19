@@ -16,36 +16,37 @@ const Services = () => {
       <About />
       <WhyChooseUs />
       <RightContentService
-        title="Marketing and Automation"
-        description="Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam."
+        title="
+Web Development"
+        description="Elevate your online presence with bespoke, user-centric websites that captivate, convert and rank yourself higher."
         image_url="https://ik.imagekit.io/yuq4cit8f/Editing.svg?updatedAt=1724916734902"
-        image_alt="Editing"
+        image_alt="Web Development"
         icon_url="https://ik.imagekit.io/yuq4cit8f/point-star-white.svg?updatedAt=1725597033557"
         icon_alt="point-star-white"
       />
       <LeftContentService
-        title="Marketing and Automation"
-        description="Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam."
+        title="Graphic Design"
+        description="Transform your brand identity with captivating visuals that leave a lasting impression and grap the attention with attraction."
         image_url="https://ik.imagekit.io/yuq4cit8f/Editing.svg?updatedAt=1724916734902"
-        image_alt="Editing"
-        icon_url="https://ik.imagekit.io/yuq4cit8f/point-star-white.svg?updatedAt=1725597033557"
-        icon_alt="point-star-white"
+        image_alt="Graphic Design"
+        icon_url="https://ik.imagekit.io/yuq4cit8f/bell-icon.svg?updatedAt=1725594391608"
+        icon_alt="bell-icon"
       />
       <RightContentService
-        title="Marketing and Automation"
-        description="Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam."
+        title="Digital Marketing"
+        description="Cut through the clutter with targeted campaigns that reach the right audience at the right time."
         image_url="https://ik.imagekit.io/yuq4cit8f/Editing.svg?updatedAt=1724916734902"
-        image_alt="Editing"
+        image_alt="Digital Marketing"
         icon_url="https://ik.imagekit.io/yuq4cit8f/point-star-white.svg?updatedAt=1725597033557"
         icon_alt="point-star-white"
       />
       <LeftContentService
-        title="Marketing and Automation"
-        description="Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam."
+        title="Branding"
+        description="Craft a cohesive narrative that resonates with your audience, building a brand that stands the test of time."
         image_url="https://ik.imagekit.io/yuq4cit8f/Editing.svg?updatedAt=1724916734902"
-        image_alt="Editing"
-        icon_url="https://ik.imagekit.io/yuq4cit8f/point-star-white.svg?updatedAt=1725597033557"
-        icon_alt="point-star-white"
+        image_alt="Branding"
+        icon_url="https://ik.imagekit.io/yuq4cit8f/bell-icon.svg?updatedAt=1725594391608"
+        icon_alt="bell-icon"
       />
       <FAQ />
       <Banner />
