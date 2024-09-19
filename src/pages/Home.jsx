@@ -7,6 +7,7 @@ import { RightContentService } from "../components/Services/Services";
 import Testimonials from "../components/Testimonials/Testimonials";
 import BlogsGlimpse from "../components/BlogsGlimpse/BlogsGlimpse";
 import Banner from "../components/Banner/Banner";
+import SideBar from "../components/SideBar/SideBar";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <Testimonials />
       <BlogsGlimpse />
       <Banner />
+      <SideBar />
     </>
   );
 };
