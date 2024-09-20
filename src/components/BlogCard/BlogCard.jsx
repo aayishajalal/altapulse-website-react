@@ -16,21 +16,21 @@ const BlogCard = ({ selectedCategory }) => {
     <>
       <div className="2xl:container mx-auto">
         <div className="w-[90%] mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-9">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-9 py-10">
             {filteredBlogs.map((data, index) => (
-              <div key={index} className="card bg-white p-4 rounded-lg shadow-md">
+              <div key={index} className="bg-white p-4 rounded-lg shadow-md">
                 <img
                   src={data.imageSrc}
                   alt={data.title}
-                  className="card-image w-full h-60 object-cover rounded-md mb-4"
+                  className="w-full h-48 md:h-60 object-cover rounded-md mb-4"
                 />
-                <h2 className="card-title text-2xl font-bold text-[#0B0366] mb-2">
+                <h2 className="text-xl md:text-2xl font-bold text-[#0B0366] mb-2">
                   {data.title}
                 </h2>
-                <h4 className="card-subtitle text-3xl font-bold text-black mb-2">
+                <h4 className="font-semibold flex gap-2 text-base sm:text-base md:text-xl lg:text-2xl">
                   {data.subtitle}
                 </h4>
-                <p className="card-description text-1xl text-gray-700">
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl">
                   {data.description}
                 </p>
               </div>
