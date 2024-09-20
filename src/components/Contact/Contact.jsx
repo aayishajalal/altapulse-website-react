@@ -26,8 +26,8 @@ const Contact = () => {
   return (
     <div className="container mx-auto py-8 px-4 md:px-8 lg:px-16">
       <div className="text-center mb-12">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Get in Touch</h2>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mt-2">Expand your network with us</p>
+        <h2 className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">Get in Touch</h2>
+        <p className="font-normal text-lg sm:text-xl md:text-2xl lg:text-xl">Expand your network with us</p>
       </div>
       
       <div className="flex flex-col lg:flex-row lg:space-x-12 space-y-12 lg:space-y-0">
@@ -36,7 +36,7 @@ const Contact = () => {
           <div className="flex flex-col gap-6">
             {/* Geo map location */}
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Location Map</h2>
+              <h2 className="font-semibold flex gap-2 text-sm sm:text-base md:text-lg lg:text-3xl">Location Map</h2>
               <MapContainer 
                 center={[lat, lng]} 
                 zoom={15} 
@@ -63,7 +63,7 @@ const Contact = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold" style={{ color: iconColor }}>
                   Office Address
                 </h3>
-                <span className="text-sm sm:text-base md:text-lg text-gray-600">Chennai, Tamil Nadu</span>
+                <span className="text-sm sm:text-base md:text-lg lg:text-xl">Chennai, Tamil Nadu</span>
               </div>
             </div>
             
@@ -74,7 +74,7 @@ const Contact = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold" style={{ color: iconColor }}>
                   Timing
                 </h3>
-                <span className="text-sm sm:text-base md:text-lg text-gray-600">Mon - Fri: 9:00 AM - 9:00 PM</span>
+                <span className="text-sm sm:text-base md:text-lg lg:text-xl">Mon - Fri: 9:00 AM - 9:00 PM</span>
               </div>
             </div>
             
@@ -85,7 +85,7 @@ const Contact = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold" style={{ color: iconColor }}>
                   Email
                 </h3>
-                <span className="text-sm sm:text-base md:text-lg text-gray-600">sales@altapulse.in</span>
+                <span className="text-sm sm:text-base md:text-lg lg:text-xl">sales@altapulse.in</span>
               </div>
             </div>
             
@@ -96,7 +96,7 @@ const Contact = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold" style={{ color: iconColor }}>
                   Phone No.
                 </h3>
-                <span className="text-sm sm:text-base md:text-lg text-gray-600">733-879-2315</span>
+                <span className="text-sm sm:text-base md:text-lg lg:text-xl">733-879-2315</span>
               </div>
             </div>
             
@@ -107,7 +107,7 @@ const Contact = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold" style={{ color: iconColor }}>
                   Live Chat
                 </h3>
-                <span className="text-sm sm:text-base md:text-lg text-gray-600">+91 80563 92136</span>
+                <span className="text-sm sm:text-base md:text-lg lg:text-xl">+91 80563 92136</span>
               </div>
             </div>
           </div>

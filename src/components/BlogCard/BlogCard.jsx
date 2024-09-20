@@ -27,10 +27,10 @@ const BlogCard = ({ selectedCategory }) => {
                 <h2 className="text-xl md:text-2xl font-bold text-[#0B0366] mb-2">
                   {data.title}
                 </h2>
-                <h4 className="text-lg md:text-3xl font-bold text-black mb-2">
+                <h4 className="font-semibold flex gap-2 text-base sm:text-base md:text-xl lg:text-2xl">
                   {data.subtitle}
                 </h4>
-                <p className="text-sm md:text-base text-gray-700">
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl">
                   {data.description}
                 </p>
               </div>

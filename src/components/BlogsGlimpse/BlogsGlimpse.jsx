@@ -14,11 +14,11 @@ const BlogsGlimpse = () => {
         <div className="w-[90%] mx-auto">
           {/* Heading */}
           <div className="flex flex-col items-center justify-center py-10 space-y-2">
-            <div className="font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl">
+            <p className="font-normal text-lg sm:text-xl md:text-2xl lg:text-xl">
               CASE STUDIES
-            </div>
-            <div className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-              DISCOVER MORE TOPICS
+            </p>
+            <div className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
+              Discover More Topics
             </div>
           </div>
 

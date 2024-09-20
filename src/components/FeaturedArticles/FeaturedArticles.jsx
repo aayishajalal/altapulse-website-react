@@ -6,11 +6,11 @@ const FeaturedArticles = () => {
     <div className="2xl:container mx-auto py-8">
       <div className="w-[90%] mx-auto">
         <div className="text-center mb-8">
-          <h4 className="font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl">
+          <h4 className="font-normal text-lg sm:text-xl md:text-2xl lg:text-xl">
             FEATURED ARTICLES
           </h4>
-          <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-            EDITOR'S CHOICE TO DIVE IN
+          <h1 className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
+            Editor's Choice To Dive In
           </h1>
         </div>
 
@@ -29,12 +29,12 @@ const FeaturedArticles = () => {
                 />
 
               <div className="p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col justify-center text-center md:text-left">
-                <h1 className="text-lg md:text-3xl font-bold text-black mb-2">
+                <h1 className="font-bold flex gap-2 text-sm sm:text-base md:text-lg lg:text-2xl">
                   {article.title}
                 </h1>
-                <h3 className="text-sm md:text-base text-gray-700">
+                <div className="text-sm sm:text-base md:text-lg lg:text-lg text-bodytext">
                   {article.subtitle}
-                </h3>
+                </div>
                 <p className="text-xl md:text-2xl font-bold text-[#0B0366] mb-2">
                   {article.date}
                 </p>
