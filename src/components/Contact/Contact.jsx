@@ -253,9 +253,10 @@ const Contact = () => {
                 className="mt-2 p-3 border rounded-lg w-full h-32 focus:ring focus:ring-blue-200 focus:outline-none"
               />
             </div>
-            <FillButton className="w-full py-3 bg-blue-600 text-white rounded-lg" name="  Send Message">
-            
-            </FillButton>
+            <FillButton
+              className="w-full py-3 bg-blue-600 text-white rounded-lg"
+              name="  Send Message"
+            ></FillButton>
           </form>
         </div>
       </div>

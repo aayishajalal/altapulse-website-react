@@ -1,12 +1,10 @@
 import React, { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "../layout/AppLayout";
-import { Outlet } from "react-router-dom"; // Required for nested routes
 import PrivacyPolicy from "../components/PrivacyPolicy/PrivacyPolicy";
 import DeliveryPolicies from "../components/DeliveryPolicies/DeliveryPolicies";
 import TermsAndConditions from "../components/TermsAndConditions/TermsAndConditions";
 import RefundPolicies from "../components/RefundPolicies/RefundPolicies";
-import IndvBlogs from "../pages/IndvBlogs";
 
 // Lazy loading components
 const Home = lazy(() => import("../pages/Home"));
@@ -14,7 +12,7 @@ const AboutUs = lazy(() => import("../pages/AboutUs"));
 const Blogs = lazy(() => import("../pages/Blogs"));
 const ContactUs = lazy(() => import("../pages/ContactUs"));
 const Services = lazy(() => import("../pages/Services"));
-// const IndvBlog = lazy(() => import("../pages/IndvBlog"));
+const IndvBlogs = lazy(() => import("../pages/IndvBlogs")); // Lazy load IndvBlogs
 const ErrorPage = lazy(() => import("../components/ErrorPage/ErrorPage"));
 
 const appRouter = createBrowserRouter([
@@ -55,14 +53,14 @@ const appRouter = createBrowserRouter([
           </Suspense>
         ),
       },
-      // {
-      //   path: "/blogs/:id", // Dynamic individual blog route
-      //   element: (
-      //     <Suspense fallback={<p>Loading...</p>}>
-      //       <IndvBlog />
-      //     </Suspense>
-      //   ),
-      // },
+      {
+        path: "/blogs/:id", // Dynamic individual blog route
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <IndvBlogs />
+          </Suspense>
+        ),
+      },
       {
         path: "/contact-us", // Contact Us page route
         element: (
@@ -80,7 +78,7 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: "/privacy-policy", // Services page route
+        path: "/privacy-policy", // Privacy Policy page route
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <PrivacyPolicy />
@@ -88,7 +86,7 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: "/delivery-policies", // Services page route
+        path: "/delivery-policies", // Delivery Policies page route
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <DeliveryPolicies />
@@ -96,7 +94,7 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: "/terms", // Services page route
+        path: "/terms", // Terms and Conditions page route
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <TermsAndConditions />
@@ -104,18 +102,10 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: "/refund-policy", // Services page route
+        path: "/refund-policy", // Refund Policy page route
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <RefundPolicies />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/individual-blog", // Services page route
-        element: (
-          <Suspense fallback={<p>Loading...</p>}>
-            <IndvBlogs />
           </Suspense>
         ),
       },
@@ -124,3 +114,4 @@ const appRouter = createBrowserRouter([
 ]);
 
 export default appRouter;
+  
