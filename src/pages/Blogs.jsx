@@ -7,7 +7,14 @@ import Banner from "../components/Banner/Banner";
 const Blogs = () => {
   return (
     <>
-      <HeroSection />
+     <HeroSection
+        heading_1=""
+        content=""
+        button_1_name=""
+        button_2_name=""
+        image_url=""
+        image_alt=""
+      />
       <FeaturedArticles />
       <BlogsGlimpse />
       <Banner />

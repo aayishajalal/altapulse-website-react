@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "../layout/AppLayout";
 import { Outlet } from "react-router-dom"; // Required for nested routes
+import PrivacyPolicy from "../components/PrivacyPolicy/PrivacyPolicy";
 
 // Lazy loading components
 const Home = lazy(() => import("../pages/Home"));
@@ -71,6 +72,14 @@ const appRouter = createBrowserRouter([
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <Services />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/privacy-policy", // Services page route
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <PrivacyPolicy />
           </Suspense>
         ),
       },

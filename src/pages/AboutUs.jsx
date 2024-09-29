@@ -12,7 +12,14 @@ import SideBar from "../components/SideBar/SideBar";
 const AboutUs = () => {
   return (
     <>
-      <HeroSection />
+     <HeroSection
+        heading_1=""
+        content=""
+        button_1_name=""
+        button_2_name=""
+        image_url=""
+        image_alt=""
+      />
       <Partners />
       <About />
       <WhyChooseUs />

@@ -12,7 +12,14 @@ import SideBar from "../components/SideBar/SideBar";
 const Home = () => {
   return (
     <>
-      <HeroSection />
+      <HeroSection
+        heading_1="Make The Best Financial Decisions"
+        content="Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor."
+        button_1_name=""
+        button_2_name=""
+        image_url=""
+        image_alt=""
+      />
       <Partners />
       <About />
       <WhyChooseUs />
