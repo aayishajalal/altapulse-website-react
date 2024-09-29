@@ -16,7 +16,7 @@ const FAQ = () => {
             ${index % 2 === 0 ? 'bg-blue-900 text-white' : 'bg-white text-gray-700'}`}
             >
               <h1 className="font-semibold flex gap-2 text-base sm:text-base md:text-xl lg:text-2xl">{faq.question}</h1>
-              <p className="text-sm sm:text-base md:text-sm lg:text-base text-bodytext">{faq.answer}</p>
+              <p className="text-sm sm:text-base md:text-sm lg:text-base">{faq.answer}</p>
             </div>
           ))}
         </div>
