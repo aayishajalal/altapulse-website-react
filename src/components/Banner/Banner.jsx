@@ -1,5 +1,6 @@
 import React from "react";
 import { FillButton } from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -21,13 +22,13 @@ const Banner = () => {
                 Ready To Get Started?
               </h1>
               <p className="text-sm sm:text-base md:text-lg lg:text-lg">
-                Risus habitant leo egestas mauris diam eget morbi tempus
-                vulputate.
+              Unlock your business potential with innovative tech solutions. Start today!
               </p>
               {/* Adjusted Button */}
               <div className="mt-4">
-                <FillButton name="Contact" className="max-w-max" />{" "}
-                {/* Ensure button fits within content */}
+                <Link to="/contact-us">
+                  <FillButton name="Contact" />
+                </Link>
               </div>
             </div>
 

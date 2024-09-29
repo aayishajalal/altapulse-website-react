@@ -3,6 +3,10 @@ import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "../layout/AppLayout";
 import { Outlet } from "react-router-dom"; // Required for nested routes
 import PrivacyPolicy from "../components/PrivacyPolicy/PrivacyPolicy";
+import DeliveryPolicies from "../components/DeliveryPolicies/DeliveryPolicies";
+import TermsAndConditions from "../components/TermsAndConditions/TermsAndConditions";
+import RefundPolicies from "../components/RefundPolicies/RefundPolicies";
+import IndvBlogs from "../pages/IndvBlogs";
 
 // Lazy loading components
 const Home = lazy(() => import("../pages/Home"));
@@ -80,6 +84,38 @@ const appRouter = createBrowserRouter([
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <PrivacyPolicy />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/delivery-policies", // Services page route
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <DeliveryPolicies />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/terms", // Services page route
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <TermsAndConditions />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/refund-policy", // Services page route
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <RefundPolicies />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/individual-blog", // Services page route
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <IndvBlogs />
           </Suspense>
         ),
       },

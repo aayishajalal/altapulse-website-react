@@ -12,10 +12,10 @@ const FeaturedArticlesData = [
     date: "Social 17 June, 2024 by Pooja"
   },
   {
-    imageSrc: "/article3.jpg",
-    title: "The Art of IPL Branding: Key Elements That Drive Success",
-    subtitle: "From iconic logos and vibrant team colors to innovative marketing campaigns and fan engagement tactics, discover how IPL's branding mastery drives its unparalleled success in the world of sports.",
-    date: "Entertainment/ 1 July, 2024 by Aj"
+    imageSrc: "https://ik.imagekit.io/yuq4cit8f/whatsapp-icon-line-connection-circuit-board.jpg?updatedAt=1727617475369",
+    title: "Boost Growth with WhatsApp Business API",
+    subtitle: "WhatsApp Business API is a transformative tool for companies looking to boost growth through effective communication, personalized marketing, and efficient customer service. Its ability to engage with customers on a widely used platform, combined with automation and data integration, allows businesses to scale their operations while delivering exceptional customer experiences.",
+    // date: "Entertainment/ 1 July, 2024 by Aj"
   }
 ];
 

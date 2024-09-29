@@ -11,9 +11,10 @@ const Partners = () => {
             <h1 className="text-black text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
               Our Collabrations
             </h1>
-            <p className="text-bodytext tracking-widest text-xs sm:text-sm md:text-base lg:text-base md:w-1/2">
-              Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
-              faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
+            <p className="text-bodytext tracking-widest text-xs sm:text-sm md:text-base lg:text-base md:w-3/4">
+              Discover our collaborations that drive innovation and success
+              across various industries. Together, we create impactful solutions
+              that elevate brands and enhance business performance.
             </p>
           </div>
           <div className=" flex items-center justify-center md:mt-[-1rem] ">

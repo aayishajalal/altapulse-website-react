@@ -34,7 +34,7 @@ const Contact = () => {
   const googleMapsUrl = "https://maps.app.goo.gl/kda8VPaUxb1nxWnJ7";
 
   return (
-    <div className="container mx-auto py-8 px-4 md:px-8 lg:px-16">
+    <div className="container mx-auto py-8 px-4 md:px-8 lg:px-16 md:py-32">
       <div className="text-center mb-12">
         <h2 className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
           Get in Touch
@@ -253,8 +253,8 @@ const Contact = () => {
                 className="mt-2 p-3 border rounded-lg w-full h-32 focus:ring focus:ring-blue-200 focus:outline-none"
               />
             </div>
-            <FillButton className="w-full py-3 bg-blue-600 text-white rounded-lg">
-              Send Message
+            <FillButton className="w-full py-3 bg-blue-600 text-white rounded-lg" name="  Send Message">
+            
             </FillButton>
           </form>
         </div>

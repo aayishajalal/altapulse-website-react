@@ -24,30 +24,57 @@ const Footer = () => {
             <div className="space-y-4 text-sm text-center md:text-left">
               <div className="flex items-center justify-center md:justify-start gap-2">
                 <MdEmail className="h-6 w-6" />
-                <span>help@frybix.com</span>
+                <a href="mailto:help@frybix.com" className="hover:underline">
+                  contact@altapulse.in
+                </a>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-2">
                 <BsTelephoneFill className="h-5 w-5" />
-                <span>+1 234 456 678 89</span>
+                <a href="tel:+91 80563 92315" className="hover:underline">
+                  +91 80563 92315
+                </a>
               </div>
               <div className="flex gap-3 mt-2 justify-center md:justify-start">
-                <SocialIcon
-                  network="linkedin"
-                  style={{ height: 30, width: 30 }}
-                />
-                <SocialIcon
-                  network="instagram"
-                  style={{ height: 30, width: 30 }}
-                />
-                <SocialIcon
-                  network="spotify"
-                  style={{ height: 30, width: 30 }}
-                />
-                <SocialIcon
-                  network="facebook"
-                  style={{ height: 30, width: 30 }}
-                />
-                <SocialIcon network="x" style={{ height: 30, width: 30 }} />
+                <a
+                  href="https://www.linkedin.com/company/altapulse-network/?viewAsMember=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SocialIcon
+                    network="linkedin"
+                    style={{ height: 30, width: 30 }}
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/altapulse_official/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SocialIcon
+                    network="instagram"
+                    style={{ height: 30, width: 30 }}
+                  />
+                </a>
+                <a
+                  href="https://twitter.com/altapulse"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SocialIcon
+                    network="twitter"
+                    style={{ height: 30, width: 30 }}
+                  />
+                </a>
+                <a
+                  href="https://whatsapp.com/channel/0029VaQtAuJ1iUxdgNZqH40m"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SocialIcon
+                    network="whatsapp"
+                    style={{ height: 30, width: 30 }}
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -71,9 +98,10 @@ const Footer = () => {
               Legal
             </h1>
             <div className=" flex flex-col space-y-2 text-sm text-center md:text-left">
-              <Link to="/terms">Terms Of Use</Link>
+              <Link to="/terms">Terms and Conditions</Link>
               <Link to="/privacy-policy">Privacy Policy</Link>
-              <Link to="/cookie-policy">Cookie Policy</Link>
+              <Link to="/delivery-policies">Delivery Policy</Link>
+              <Link to="/refund-policy">Refund Policy</Link>
             </div>
           </div>
 

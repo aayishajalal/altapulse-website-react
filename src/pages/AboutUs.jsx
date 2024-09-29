@@ -13,28 +13,28 @@ const AboutUs = () => {
   return (
     <>
      <HeroSection
-        heading_1=""
-        content=""
-        button_1_name=""
-        button_2_name=""
-        image_url=""
+        heading_1="Elevate Your Brand Beyond Boundaries"
+        content="Seamlessly Connecting Ideas with Impact, Crafting Your Digital Success, One Step at a Time"
+        button_1_name="Contact Us"
+        button_2_name="Explore"
+        image_url="https://ik.imagekit.io/yuq4cit8f/About%20us%20image.png?updatedAt=1727607531377"
         image_alt=""
       />
       <Partners />
       <About />
       <WhyChooseUs />
-      <RightContentService
+      {/* <RightContentService
         title="Marketing and Automation"
         description="Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam."
         image_url="https://ik.imagekit.io/yuq4cit8f/Editing.svg?updatedAt=1724916734902"
         image_alt="Editing"
         icon_url="https://ik.imagekit.io/yuq4cit8f/point-star-white.svg?updatedAt=1725597033557"
         icon_alt="point-star-white"
-      />
+      /> */}
       <Testimonials />
       <BlogsGlimpse />
       <Banner />
-      <SideBar />
+      {/* <SideBar /> */}
     </>
   );
 };
