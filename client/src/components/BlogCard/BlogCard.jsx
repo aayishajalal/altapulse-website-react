@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import BlogsCardData from "../../api/BlogsCardData"; 
+import BlogsCardData from "../../api/BlogsCardData";
 
 const BlogCard = ({ selectedCategory }) => {
   const navigate = useNavigate(); // Hook to access the navigate function
@@ -9,9 +9,8 @@ const BlogCard = ({ selectedCategory }) => {
     if (selectedCategory === "All") return true;
     if (selectedCategory === "Code") return data.title === "Web Development";
     if (selectedCategory === "Design") return data.title === "Graphic Design";
-    if (selectedCategory === "Marketing") return (
-      data.title === "Digital Marketing" || data.title === "Branding"
-    );
+    if (selectedCategory === "Marketing")
+      return data.title === "Digital Marketing" || data.title === "Branding";
     return false;
   });
 
@@ -25,10 +24,10 @@ const BlogCard = ({ selectedCategory }) => {
       <div className="w-[90%] mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-9 py-10">
           {filteredBlogs.map((data, index) => (
-            <div 
-              key={index} 
-              className="bg-white p-4 rounded-lg shadow-md cursor-pointer" 
-              onClick={() => handleCardClick(data)} // Attach click handler
+            <div
+              key={index}
+              className="bg-white p-4 rounded-lg shadow-md cursor-pointer"
+              //onClick={() => handleCardClick(data)} // Attach click handler
             >
               <img
                 src={data.imageSrc}

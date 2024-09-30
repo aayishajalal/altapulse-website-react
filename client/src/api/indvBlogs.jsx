@@ -5,7 +5,7 @@ export const blogs = [
   {
     id: 1,
     title: "Unlock the Power of WhatsApp Marketing for Your Business",
-    imageSrc: "path/to/image1.jpg", // Add an image path here
+    imageSrc: "https://ik.imagekit.io/yuq4cit8f/whatsapp-icon-line-connection-circuit-board.jpg?updatedAt=1727617475369", // Add an image path here
     subtitle: "Your guide to leveraging WhatsApp for marketing success", // Add a subtitle
     description: "Learn how to effectively market your business using WhatsApp.", // Add a description
     content: [
@@ -20,7 +20,7 @@ export const blogs = [
   {
     id: 2,
     title: "Transform Your Customer Engagement with WhatsApp Chatbots",
-    imageSrc: "path/to/image2.jpg", // Add an image path here
+    imageSrc: "https://ik.imagekit.io/yuq4cit8f/465688-PFW9ZG-697.jpg?updatedAt=1727616529502", // Add an image path here
     subtitle: "Engage customers 24/7 with chatbots", // Add a subtitle
     description: "Discover the potential of chatbots in enhancing customer engagement.", // Add a description
     content: [

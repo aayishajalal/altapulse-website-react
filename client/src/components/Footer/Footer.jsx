@@ -35,46 +35,34 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex gap-3 mt-2 justify-center md:justify-start">
-                <a
-                  href="https://www.linkedin.com/company/altapulse-network/?viewAsMember=true"
+                <SocialIcon
+                  url="https://www.linkedin.com/company/altapulse-network/?viewAsMember=true"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  <SocialIcon
-                    network="linkedin"
-                    style={{ height: 30, width: 30 }}
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com/altapulse_official/"
+                  network="linkedin"
+                  style={{ height: 30, width: 30 }}
+                />
+                <SocialIcon
+                  url="https://www.instagram.com/altapulse_official/"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  <SocialIcon
-                    network="instagram"
-                    style={{ height: 30, width: 30 }}
-                  />
-                </a>
-                <a
-                  href="https://twitter.com/altapulse"
+                  network="instagram"
+                  style={{ height: 30, width: 30 }}
+                />
+                <SocialIcon
+                  url="https://twitter.com/altapulse"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  <SocialIcon
-                    network="twitter"
-                    style={{ height: 30, width: 30 }}
-                  />
-                </a>
-                <a
-                  href="https://whatsapp.com/channel/0029VaQtAuJ1iUxdgNZqH40m"
+                  network="twitter"
+                  style={{ height: 30, width: 30 }}
+                />
+                <SocialIcon
+                  url="https://whatsapp.com/channel/0029VaQtAuJ1iUxdgNZqH40m"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  <SocialIcon
-                    network="whatsapp"
-                    style={{ height: 30, width: 30 }}
-                  />
-                </a>
+                  network="whatsapp"
+                  style={{ height: 30, width: 30 }}
+                />
               </div>
             </div>
           </div>
